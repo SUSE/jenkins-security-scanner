@@ -24,10 +24,14 @@ THIS_BUILD_DIR="${PERSISTENT_DIR}/${PROJECT_ID}/builds/${BUILD_NUMBER}"
 
 LAST_REPORT_JSON="${PERSISTENT_DIR}/${PROJECT_ID}/last-brakeman-report.json"
 LAST_REPORT_HTML="${PERSISTENT_DIR}/${PROJECT_ID}/last-brakeman-report.html"
+LAST_REPORT_TABS="${PERSISTENT_DIR}/${PROJECT_ID}/last-brakeman-report.tabs"
+
 LAST_CHANGES_JSON="${PERSISTENT_DIR}/${PROJECT_ID}/last-changes.json"
 
 CURRENT_REPORT_HTML="${THIS_BUILD_DIR}/brakeman-report.html"
 CURRENT_REPORT_JSON="${THIS_BUILD_DIR}/brakeman-report.json"
+CURRENT_REPORT_JSON="${THIS_BUILD_DIR}/brakeman-report.tabs"
+
 CURRENT_CHANGES_JSON="${THIS_BUILD_DIR}/changes.json"
 
 # Creates brakeman summary visible in build log
@@ -45,6 +49,7 @@ fi
 brakeman \
   -o ${CURRENT_REPORT_HTML} \
   -o ${CURRENT_REPORT_JSON} \
+  -o ${CURRENT_REPORT_TABS} \
   ${TEST_DIR}
 
 # First run, full report are also the changes
@@ -57,6 +62,6 @@ cp ${CURRENT_CHANGES_JSON} ${LAST_CHANGES_JSON}
 
 # report* files are copied to last-* in the workspace root
 cp ${CURRENT_REPORT_HTML} ${LAST_REPORT_HTML}
-# last-brakeman-report.json is used while comparing builds at the beginning of a next build
+# ${LAST_REPORT_JSON} is used while comparing builds at the beginning of a next build
 cp ${CURRENT_REPORT_JSON} ${LAST_REPORT_JSON}
-
+cp ${CURRENT_REPORT_TABS} ${LAST_REPORT_TABS}
