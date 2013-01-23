@@ -5,7 +5,7 @@ This is a new --REPLACE_WITH_YOUR_PROJECT_NAME-- security report.
 Report Details
 ==============
 For the full report details see ${ENV, var="JOB_URL"}ws/__JENKINS_TEST__/--REPLACE-WITH-BUILD-ID--/builds/${BUILD_NUMBER}/brakeman-report.html
-And the same in JSON ${ENV, var="JOB_URL"}ws/__JENKINS_TEST__/builds/--REPLACE-WITH-BUILD-ID--/${BUILD_NUMBER}/brakeman-report.json
+And the same in JSON ${ENV, var="JOB_URL"}ws/__JENKINS_TEST__/--REPLACE-WITH-BUILD-ID--/builds/${BUILD_NUMBER}/brakeman-report.json
 
 Changes
 =======
