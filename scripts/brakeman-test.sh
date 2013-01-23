@@ -30,7 +30,7 @@ LAST_CHANGES_JSON="${PERSISTENT_DIR}/${PROJECT_ID}/last-changes.json"
 
 CURRENT_REPORT_HTML="${THIS_BUILD_DIR}/brakeman-report.html"
 CURRENT_REPORT_JSON="${THIS_BUILD_DIR}/brakeman-report.json"
-CURRENT_REPORT_JSON="${THIS_BUILD_DIR}/brakeman-report.tabs"
+CURRENT_REPORT_TABS="${THIS_BUILD_DIR}/brakeman-report.tabs"
 
 CURRENT_CHANGES_JSON="${THIS_BUILD_DIR}/changes.json"
 
