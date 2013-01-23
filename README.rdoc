@@ -1,4 +1,4 @@
-== Jenkins - Brakeman ==
+== Jenkins - Brakeman
 
 Little project where you can find scripts and templates for calling
 Brakeman https://github.com/presidentbeef/brakeman
