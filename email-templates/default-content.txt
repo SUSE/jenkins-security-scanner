@@ -4,15 +4,15 @@ This is a new --REPLACE_WITH_YOUR_PROJECT_NAME-- security report.
 
 Report Details
 ==============
-For the full report details see ${ENV, var="JOB_URL"}ws/__JENKINS_TEST__/builds/${BUILD_NUMBER}/brakeman-report.html
-And the same in JSON ${ENV, var="JOB_URL"}ws/__JENKINS_TEST__/builds/${BUILD_NUMBER}/brakeman-report.json
+For the full report details see ${ENV, var="JOB_URL"}ws/__JENKINS_TEST__/--REPLACE-WITH-BUILD-ID--/builds/${BUILD_NUMBER}/brakeman-report.html
+And the same in JSON ${ENV, var="JOB_URL"}ws/__JENKINS_TEST__/builds/--REPLACE-WITH-BUILD-ID--/${BUILD_NUMBER}/brakeman-report.json
 
 Changes
 =======
 Here's the JSON interpretation of all the fixed and new issues that have appeared comparing to the last run.
 
 --- [ JSON ] ---
-${FILE, path="__JENKINS_TEST__/last-changes.json"}--- [ JSON ] ---
+${FILE, path="__JENKINS_TEST__/--REPLACE-WITH-BUILD-ID--/last-changes.json"}--- [ JSON ] ---
 
 Report status
 =============
@@ -26,6 +26,5 @@ Jenkins
 
 -- 
 
-Check https://github.com/openSUSE/jenkins-brakeman to modify the test
-an or the report.
+Check https://github.com/openSUSE/jenkins-brakeman to modify the test and/or the report.
 

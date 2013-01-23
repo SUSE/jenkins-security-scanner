@@ -26,9 +26,9 @@ LAST_REPORT_JSON="${PERSISTENT_DIR}/${PROJECT_ID}/last-brakeman-report.json"
 LAST_REPORT_HTML="${PERSISTENT_DIR}/${PROJECT_ID}/last-brakeman-report.html"
 LAST_CHANGES_JSON="${PERSISTENT_DIR}/${PROJECT_ID}/last-changes.json"
 
-CURRENT_REPORT_HTML="${THIS_BUILD_DIR}/${PROJECT_ID}/brakeman-report.html"
-CURRENT_REPORT_JSON="${THIS_BUILD_DIR}/${PROJECT_ID}/brakeman-report.json"
-CURRENT_CHANGES_JSON="${THIS_BUILD_DIR}/${PROJECT_ID}/changes.json"
+CURRENT_REPORT_HTML="${THIS_BUILD_DIR}/brakeman-report.html"
+CURRENT_REPORT_JSON="${THIS_BUILD_DIR}/brakeman-report.json"
+CURRENT_CHANGES_JSON="${THIS_BUILD_DIR}/changes.json"
 
 # Creates brakeman summary visible in build log
 brakeman $TEST_DIR
