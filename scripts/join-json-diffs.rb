@@ -42,7 +42,7 @@ end
 
 puts "Exporting to file #{export_to_file}"
 File.open(export_to_file, "w") do |f|
-  f.write(merged_diffs.to_json)
+  f.write(jj (merged_diffs))
 end
 
 exit 0
