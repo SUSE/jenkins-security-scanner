@@ -41,8 +41,9 @@ files_to_merge.each do |file|
 end
 
 puts "Exporting to file #{export_to_file}"
+jj(merged_diffs)
 File.open(export_to_file, "w") do |f|
-  f.write(jj (merged_diffs))
+  f.write(JSON.pretty_generate(merged_diffs))
 end
 
 exit 0
